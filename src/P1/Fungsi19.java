@@ -16,9 +16,9 @@ public class Fungsi19 {
     public static void main(String[] args) {
         Scanner sc19 = new Scanner(System.in);
 
-        System.out.println("========================");
-        System.out.println("Pendapatan Setiap Cabang");
-        System.out.println("========================");
+        System.out.println("==========================");
+        System.out.println(" Pendapatan Setiap Cabang ");
+        System.out.println("==========================");
 
         // Menampilkan pendapatan setiap cabang jika semua bunga habis terjual
         System.out.println("Pendapatan setiap cabang jika semua bunga habis terjual : ");
@@ -62,10 +62,10 @@ public class Fungsi19 {
         }
 
         System.out.println("\n============================");
-        System.out.println("   Total Stok Bunga Tersedia  ");
-        System.out.println("==============================");
+        System.out.println(" Total Stok Bunga Tersedia  ");
+        System.out.println("============================");
         // Menampilkan stok bunga setelah pengurangan
-        System.out.println("Stok bunga setelah pengurangan    : ");
+        System.out.println("Stok bunga setelah pengurangan             : ");
         for (int i = 0; i < STOCK_BUNGA.length; i++) {
             for (int j = 0; j < STOCK_BUNGA[i].length; j++) {
                 System.out.print(STOCK_BUNGA[i][j] + " ");
