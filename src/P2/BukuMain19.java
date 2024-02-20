@@ -18,5 +18,12 @@ public class BukuMain19 {
         Buku19 bk2 = new Buku19 ("Self Reward","Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku19 BukuFirmandika = new Buku19("Firmandika", "Jati Kusuma", 20, 5, 2000);
+        BukuFirmandika. tampilInformasi();
+        BukuFirmandika. terjual(3);
+        BukuFirmandika. hitungHargaTotal();
+        BukuFirmandika. tampilInformasi();
+
     }
 }
