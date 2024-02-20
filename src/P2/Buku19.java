@@ -29,10 +29,9 @@ public class Buku19 {
         if (hargaTotal > 15000) {
             diskon = hargaTotal * 0.12;
             
-        } else if (hargaTotal > 75000){
-
-        
+        } else if (hargaTotal > 75000){        
             diskon = hargaTotal * 0.05;
+            
         } else {
 
         }
