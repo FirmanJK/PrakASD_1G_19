@@ -11,9 +11,10 @@ public class Buku19 {
         System.out.println("Sisa stok      : " + stok);
         System.out.println("Harga          : " + harga);
     }
-
     void terjual(int jml) {
-        stok -= jml;
+        if(stok > 0) {
+           stok -= jml;
+        }
     }
     void restock(int jml) {
         stok += jml;
