@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class ArrayObjects {
     public static void main(String[] args) {
-        PersegiPanjang [] ppArray = new PersegiPanjang[3];
-
         Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan total Persegi Panjang : ");
+        int PersegiPanjang = sc.nextInt();
+        PersegiPanjang [] ppArray = new PersegiPanjang[PersegiPanjang];
 
         for (int i = 0; i < 3; i++) 
         {
