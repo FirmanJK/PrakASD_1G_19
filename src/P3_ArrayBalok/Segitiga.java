@@ -16,5 +16,6 @@ public class Segitiga {
     public double hitungKeliling() {
         double sisiMiring = Math.sqrt(alas * alas + tinggi * tinggi);
         return (int) alas + (int) tinggi + (int) sisiMiring;
+
     }
 }
