@@ -7,8 +7,9 @@ public class ProgramMahasiswa {
         Scanner scanner = new Scanner(System.in);
         Mahasiswa[] mahasiswa = new Mahasiswa[3];
 
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Data Mahasiswa ke- " + (i + 1));
+        // Input data mahasiswa
+        for (int i = 0; i < mahasiswa.length; i++) {
+            System.out.println("\nData Mahasiswa ke-" + (i + 1));
             
             System.out.print("Masukkan Nama : ");
             String nama = scanner.nextLine();
@@ -19,18 +20,36 @@ public class ProgramMahasiswa {
             System.out.print("Masukkan Jenis Kelamin : ");
             char jenisKelamin = scanner.next().charAt(0);
 
-            System.out.print("IPK : ");
+            System.out.print("Masukkan IPK : ");
             double ipk = scanner.nextDouble();
             scanner.nextLine();
 
             mahasiswa[i] = new Mahasiswa(nama, nim, jenisKelamin, ipk);
         }
-        for (int i = 0; i < mahasiswa.length; i++) {
-            System.out.println("Data Mahasiswa ke-" + (i+1));
-            System.out.println("Nama : " + mahasiswa[i].getNama());
-            System.out.println("NIM  : " + mahasiswa[i].getnim());
-            System.out.println("Jenis Kelamin : " + mahasiswa[i].getjenisKelamin());
-            System.out.println("IPK  : " + mahasiswa[i].getIpk());
+
+        // Menghitung total IPK
+        double totalIpk = 0;
+        for (Mahasiswa mhs : mahasiswa) {
+            totalIpk += mhs.getIpk();
         }
+
+        // Menghitung rata-rata IPK
+        double rataRataIpk = totalIpk / mahasiswa.length;
+
+        // Mencari mahasiswa dengan IPK terbaik
+        Mahasiswa mahasiswaTerbaik = mahasiswa[0];
+        for (int i = 1; i < mahasiswa.length; i++) {
+            if (mahasiswa[i].getIpk() > mahasiswaTerbaik.getIpk()) {
+                mahasiswaTerbaik = mahasiswa[i];
+            }
+        }
+
+        // Menampilkan hasil
+        System.out.printf("\nRata-rata IPK: %.2f\n", rataRataIpk);
+        System.out.println("Mahasiswa dengan IPK terbaik    :");
+        System.out.println("Nama    : " + mahasiswaTerbaik.getNama());
+        System.out.println("NIM     : " + mahasiswaTerbaik.getnim());
+        System.out.println("Jenis Kelamin : " + mahasiswaTerbaik.getjenisKelamin());
+        System.out.println("IPK     : " + mahasiswaTerbaik.getIpk());
     }
 }
