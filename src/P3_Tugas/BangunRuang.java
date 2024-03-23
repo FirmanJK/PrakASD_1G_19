@@ -19,8 +19,8 @@ public class BangunRuang {
             double sisiMiring = sc.nextDouble();
             KerucutArray [i] = new Kerucut(jariJariKerucut, sisiMiring);
 
-            System.out.println("Luas permukaan      : " + KerucutArray[i].hitungLuasPermukaan());
-            System.out.println("Volume              : " + KerucutArray[i].hitungVolume());
+            System.out.println("Luas permukaan  : " + KerucutArray[i].hitungLuasPermukaan());
+            System.out.println("Volume          : " + KerucutArray[i].hitungVolume());
             System.out.println();
         }
 
