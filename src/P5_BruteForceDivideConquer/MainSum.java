@@ -4,17 +4,17 @@ import java.util.Scanner;
 
 public class MainSum {
     public static void main(String[] args) {
-        Scanner sc28 =new Scanner(System.in);
+        Scanner sc19 =new Scanner(System.in);
         System.out.println("================================================================");
         System.out.println("Program Menghitung Keuntungan Total (Satuan Juta. misal : 5.9)");
         System.out.print("Masukkan jumlah bulan : ");
-        int elm = sc28.nextInt();
+        int elm = sc19.nextInt();
 
         Sum sm =new Sum(elm);
         System.out.println("================================================================");
         for (int i = 0; i < sm.elemen; i++) {
             System.out.print("Masukkan untung bulan ke - " +(i+1)+ " = ");
-            sm.keuntungan[i]=sc28.nextDouble();
+            sm.keuntungan[i]=sc19.nextDouble();
         } 
         System.out.println("==============================================");
         System.out.println("Algoritma Brute Force ");
