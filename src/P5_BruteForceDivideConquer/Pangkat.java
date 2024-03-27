@@ -1,26 +1,25 @@
 package P5_BruteForceDivideConquer;
 
 public class Pangkat {
-    public int nilai, pangkat;
+    public int nilai;
 
-    int pangkatBF(int a, int n) {
-        int hasil = 1;
-        for (int i = 0; i < n; i++) {
-            hasil *= a;
+    int faktorialBF(int n) {
+        int fakto = 1;
+        int i = 1;
+        while (i<= n) {
+            fakto *= i;
+            i++;
         }
-        return hasil;
+        return fakto;
     }
 
-    int pangkatDC(int a, int n) {
-        if(n==0){
+    int faktorialDC(int n) {
+        if(n==1){
             return 1;
         } else{
-            if (n%2==1) // bilangan ganjil
-            {
-                return (pangkatDC(a,n/2)*pangkatDC(a, n/2)*a);
-            }else{
-                return (pangkatDC(a,n/2)*pangkatDC(a,n/2));
-            }
+            int fakto = n * faktorialDC(n-1); // bilangan ganjil
+            return fakto;
+            
         }
     }
 }
