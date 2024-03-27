@@ -2,12 +2,15 @@ package P5_BruteForceDivideConquer;
 
 public class Faktorial {
     public int nilai;
+
     int faktorialBF (int n) {
         int fakto = 1;
-        for (int i = 1; i <= n; i++) { 
-            fakto = fakto * i;    
+        int i = 1;
+        while (i <= n) {
+            fakto *= i;
+            i++;
         }
-        return fakto;
+        return fakto;    
     }
 
     int faktorialDC (int n){
