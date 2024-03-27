@@ -12,7 +12,7 @@ public class Array19 {
         System.out.println("================================");
 
         // Input jumlah matakuliah
-        System.out.print("Masukkan jumlah matakuliah    : ");
+        System.out.print("Masukkan jumlah matakuliah   : ");
         int n = sc19.nextInt();
         sc19.nextLine();
 
@@ -23,13 +23,13 @@ public class Array19 {
 
         // Input data matakuliah
         for (int i = 0; i < n; i++) {
-            System.out.print("Masukkan nama matakuliah ke-" + (i + 1) + "   : ");
+            System.out.print("Masukkan nama matakuliah ke-" + (i + 1) + "           : ");
             namaMatkul[i] = sc19.nextLine();
 
             System.out.print("Masukkan nilai huruf matakuliah ke-" + (i + 1) + "    : ");
             nilaiHuruf[i] = sc19.nextLine();
 
-            System.out.print("Masukkan bobot SKS matakuliah ke-" + (i + 1) + "  : ");
+            System.out.print("Masukkan bobot SKS matakuliah ke-" + (i + 1) + "      : ");
             bobotSks[i] = sc19.nextInt();
 
             sc19.nextLine();
@@ -68,7 +68,7 @@ public class Array19 {
         ipSemester /= totalSks;
 
         // Tampilkan hasil
-        System.out.println("IP Semester : " + ipSemester);
+        System.out.println("\nIP Semester : " + ipSemester);
     }
 
 }
