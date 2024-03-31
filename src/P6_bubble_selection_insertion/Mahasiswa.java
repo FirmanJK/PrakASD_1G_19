@@ -1,4 +1,4 @@
-package P6;
+package P6_bubble_selection_insertion;
 
 public class Mahasiswa {
     String nama;
@@ -13,9 +13,9 @@ public class Mahasiswa {
     }
 
     void tampil() {
-        System.out.println("Nama = "+ nama);
+        System.out.println("Nama        = "+ nama);
         System.out.println("Tahun Masuk = "+ thnMasuk);
-        System.out.println("Umur = "+ umur);
-        System.out.println("IPK = "+ ipk);
+        System.out.println("Umur        = "+ umur);
+        System.out.println("IPK         = "+ ipk);
     }
 }
