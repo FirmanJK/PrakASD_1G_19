@@ -1,4 +1,4 @@
-package P6_bubble_selection_insertion;
+package P6_bubble_selection_insertion.Percobaan;
 
 public class DaftarMahasiswaBerprestasi {
     Mahasiswa listMhs[] = new Mahasiswa[5];
