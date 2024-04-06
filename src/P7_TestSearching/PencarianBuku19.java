@@ -42,10 +42,22 @@ public class PencarianBuku19 {
         if (pos!= -1) {
             System.out.println("Kode Buku\t : " +x);
             System.out.println("Judul\t\t : " +listBk[pos].judulBuku);
-            System.out.println("Tahun Terbit\t : " +listBk[pos].pengarang);
+            System.out.println("Tahun Terbit\t : " +listBk[pos].tahunTerbit);
+            System.out.println("Pengarang\t : " +listBk[pos].pengarang);
             System.out.println("Stock\t\t : " +listBk[pos].stock);
         } else {
             System.out.println("Data " + x + " tidak ditemukan");
         }
+    }
+
+    public Buku19 FindBuku(int cari) {
+        Buku19 buku = null;
+        for (int j = 0; j < listBk.length; j++) {
+            if (listBk[j].kodeBuku == cari) {
+                buku = listBk[j];
+                break;
+            }
+        }
+        return buku;
     }
 }

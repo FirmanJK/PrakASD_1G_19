@@ -44,5 +44,8 @@ public class BukuMain19 {
     data.Tampilposisi(cari, posisi);
 
     data.TampilData(cari, posisi);
+
+    Buku19 dataBuku19 = data.FindBuku(cari);
+    dataBuku19.tampilDataBuku();
     }
 }
