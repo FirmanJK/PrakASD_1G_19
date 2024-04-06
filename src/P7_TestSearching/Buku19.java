@@ -18,8 +18,8 @@ public class Buku19 {
     void  tampilDataBuku() {
         System.out.println("===============================");
         System.out.println("Kode buku       : " +kodeBuku);
-        System.out.println("Judul buku      : " +judulBuku);
-        System.out.println("Tahun terbit    : " +tahunTerbit);
+        System.out.println("Judul Buku      : " +judulBuku);
+        System.out.println("Tahun Terbit    : " +tahunTerbit);
         System.out.println("Pengarang       : " +pengarang);
         System.out.println("Stock           : " +stock);
     }

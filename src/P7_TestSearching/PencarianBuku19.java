@@ -20,10 +20,10 @@ public class PencarianBuku19 {
     }
 
     public int FindSeqSearch(int cari) {
-        int posisi = 0;
-        for (int i = 0; i < listBk.length; i++) {
-            if (listBk[i].kodeBuku == cari) {
-                i = posisi;
+        int posisi = -1;
+        for (int j = 0; j < listBk.length; j++) {
+            if (listBk[j].kodeBuku == cari) {
+                posisi = j;
                 break;  
             }
         }
@@ -32,9 +32,20 @@ public class PencarianBuku19 {
 
     void Tampilposisi(int x, int pos){
         if(pos != -1){
-            System.out.println("data : " + x + " ditemukan pada indeks " +pos);
+            System.out.println("Data      : " + x + " Ditemukan pada indeks " +pos);
         } else {
-            System.out.println("data " + x + " tidak ditemukan ");
+            System.out.println("Data    : " + x + " tidak ditemukan ");
+        }
+    }
+
+    void TampilData(int x, int pos){
+        if (pos!= -1) {
+            System.out.println("Kode Buku\t : " +x);
+            System.out.println("Judul\t\t : " +listBk[pos].judulBuku);
+            System.out.println("Tahun Terbit\t : " +listBk[pos].pengarang);
+            System.out.println("Stock\t\t : " +listBk[pos].stock);
+        } else {
+            System.out.println("Data " + x + " tidak ditemukan");
         }
     }
 }

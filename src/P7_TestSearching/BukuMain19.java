@@ -30,17 +30,19 @@ public class BukuMain19 {
         data.tambah(m);
         }
     System.out.println("=====================================================");
-    System.out.println("Data keseluruhan Buku : ");
+    System.out.println("Data keseluruhan Mahasiswa : ");
     data.tampil();
 
-    System.out.println("=====================================================");
+    System.out.println("_____________________________________________________");
+    System.out.println("_____________________________________________________");
     System.out.println("Pencarian Data : ");
-    System.out.println("=====================================================");
     System.out.println("Masukkan Kode Buku yang dicari : ");
     System.out.print("Kode Buku : ");
     int cari = s.nextInt();
-    System.out.println("Menggunakan sequential search");
+    System.out.println("Menggunakan Sequential Search");
     int posisi = data.FindSeqSearch(cari);
     data.Tampilposisi(cari, posisi);
+
+    data.TampilData(cari, posisi);
     }
 }
