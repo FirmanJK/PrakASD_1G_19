@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main19",
+            "request": "launch",
+            "mainClass": "P9_Stack.Main19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "ProgramSiswaFirman",
+            "request": "launch",
+            "mainClass": "P8.ProgramSiswaFirman",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
