@@ -50,15 +50,17 @@ public class Gudang19 {
     }
 
     public Barang19 lihatBarangTeratas(){
-        if (top == size-1) {
+        if (!cekKosong()) {
             Barang19 barangTeratas = tumpukan[top];
-            System.out.println("Barang teratas : " + barangTeratas.nama);
+            top++;
+            System.out.println("Barang teratas di Gudang :" );
+            System.out.printf("Kode %d: %s (kategori %s)\n", barangTeratas.kode, barangTeratas.nama, barangTeratas.kategori);
             return barangTeratas;
         } else {
             System.out.println("Tumpukan barang kosong");
             return null;
         }
-    }
+    }    
 
     public void tampilkanBarang(){
         if (!cekKosong()) {
