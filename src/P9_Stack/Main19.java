@@ -5,8 +5,9 @@ public class Main19 {
     public static void main(String[] args) {
         Gudang19 gudang = new Gudang19(7);
         Scanner sc19 = new Scanner(System.in);
-
-        while (true) {
+        
+        boolean ulangi = true;
+        while (ulangi) {
             System.out.println("\nMenu : ");
             System.out.println("1. Tambah barang");
             System.out.println("2. Ambil barang");
@@ -34,6 +35,7 @@ public class Main19 {
                     gudang.tampilkanBarang();
                     break;
                 case 4:
+                    ulangi = false;
                     break;
                 default:
 
