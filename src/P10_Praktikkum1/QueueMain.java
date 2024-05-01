@@ -1,4 +1,4 @@
-package P10_Praktikum1;
+package P10_Praktikkum1;
 
 import java.util.Scanner;
 
