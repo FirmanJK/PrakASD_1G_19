@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SLLMain",
+            "request": "launch",
+            "mainClass": "P11_Minggu11_LinkedList.SLLMain",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
             "name": "QueueMain",
             "request": "launch",
             "mainClass": "P10_Praktikkum2.QueueMain",
