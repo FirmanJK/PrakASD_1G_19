@@ -1,5 +1,7 @@
 package P12_Doublelinkedlists;
 
+import java.io.EOFException;
+
 public class DoubleLinkedLists {
     Node head;
     int size;
@@ -85,5 +87,86 @@ public class DoubleLinkedLists {
         } else {
             System.out.println("Linked List Kosong");
         }
+    }
+
+    public void removeFirst() throws Exception {
+        if (isEmpty()) {
+            throw new Exception("Linked List masih kosong, tidak dapat dihapus");
+        }else if (head.next != null) {
+            head=head.next;
+            head.prev = null;
+            size--;
+        }
+    }
+
+    public void removeLast() throws Exception{
+        if (isEmpty()) {
+            throw new Exception("Linked List masih kosong, tidak dapat dihapus");
+        } else if (head.next==null) {
+            head = null;
+            size--;
+            return;
+        }
+        Node current = head;
+        while (current.next.next != null) {
+            current = current.next;
+        }
+        current.next = null;
+        size--;
+    }
+
+    public void remove(int index) throws Exception {
+        if (isEmpty() || index>=size) {
+            throw new Exception("Nilai Indeks diluar batas");
+        }else if (index == 0) {
+            removeFirst();
+        }else{
+            Node current = head;
+            int i = 0;
+            while (i<index) {
+                current = current.next;
+                i++;
+            }
+            if (current.next == null) {
+                current.prev.next = null;
+            }else if (current.prev == null) {
+                current = current.next;
+                current.prev = null;
+                head = current;
+            }else{
+                current.prev.next = current.next;
+                current.next.prev = current.prev;
+            }
+            size--;
+        }
+    }
+
+    public int getFirst()throws Exception{
+        if (isEmpty()) {
+            throw new Exception("Linked List Kosong");
+        }
+        return head.data;
+    }
+
+    public int getLast()throws Exception{
+        if (isEmpty()) {
+            throw new Exception("Linked List Kosong");
+        }
+        Node tmp = head;
+        while (tmp.next != null) {
+            tmp = tmp.next;
+        }
+        return tmp.data;
+    }
+    
+    public int get(int index)throws Exception{
+        if (isEmpty() || index >= size) {
+            throw new Exception("Nilai indeks di luar batas");
+        }
+        Node tmp = head;
+        for (int i = 0; i < index; i++) {
+            tmp=tmp.next;
+        }
+        return tmp.data;
     }
 }
