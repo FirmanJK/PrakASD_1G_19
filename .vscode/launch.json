@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinaryTreeMain19",
+            "request": "launch",
+            "mainClass": "P14.BinaryTreeMain19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
             "name": "Main_19",
             "request": "launch",
             "mainClass": "P13_UAS.Main_19",
