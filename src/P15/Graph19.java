@@ -24,11 +24,11 @@ public class Graph19 {
                     ++totalIn;
                 }
             }
-                for (k = 0; k < list[asal].size; k++) {
-                    list[asal].get(k);
-                }
-                totalOut = k; 
-            }
+        }
+        for (k = 0; k < list[asal].size(); k++) {
+            list[asal].get(k);
+        }
+        totalOut = k; 
         
         System.out.println("InDegree dari Gedung " +  (char) ('A' + asal)+ ": " + totalIn);
         System.out.println("OutDegree dari Gedung " + (char) ('A' + asal)+ ": " + totalOut);
@@ -36,11 +36,7 @@ public class Graph19 {
     }
 
     public void removeEdge(int asal, int tujuan) throws Exception {
-        for (int i = 0; i < list.length; i++) {
-            if (i == tujuan) {
-                list[asal].remove(tujuan);
-            }
-        }
+        list[asal].remove(tujuan);
     }
 
     public void removeAllEdges() {
@@ -53,13 +49,29 @@ public class Graph19 {
     public void printGraph() throws Exception {
         for (int i = 0; i < vertex; i++) {
             if (list[i].size() > 0) {
-                System.out.println("Gedung " + (char) ('A' + i) + " terhubung dengan ");
+                System.out.print("Gedung " + (char) ('A' + i) + " terhubung dengan: ");
                 for (int j = 0; j < list[i].size(); j++) {
                     System.out.print((char) ('A' + list[i].get(j)) + " (" + list[i].getJarak(j) + "m), ");
                 }
                 System.out.println();
             }
         }
-        System.out.println();
+        System.out.println();        
+    }
+
+    public void printHasil(int asal, int tujuan) throws Exception {
+        boolean found = false;
+        if (list[asal].size() > 0) {
+            for (int j = 0; j < list[asal].size(); j++) {
+                if (list[asal].get(j) == tujuan) {
+                    System.out.println("Gedung " + (char) ('A' + asal) + " dan Gedung " + (char) ('A' + tujuan) + " bertetangga");
+                    found = true;
+                    break;
+                }
+            }
+        }
+        if (!found) {
+            System.out.println("Gedung " + (char) ('A' + asal) + " dan Gedung " + (char) ('A' + tujuan) + " tidak bertetangga");
+        }
     }
 }

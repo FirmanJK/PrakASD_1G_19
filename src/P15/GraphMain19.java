@@ -1,7 +1,11 @@
 package P15;
 
+import java.util.Scanner;
+
 public class GraphMain19 {
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+        
         Graph19 gedung = new Graph19(6);
         gedung.addEdge(0, 1, 50); 
         gedung.addEdge(0, 2, 100);
@@ -9,9 +13,20 @@ public class GraphMain19 {
         gedung.addEdge(2, 3, 40);
         gedung.addEdge(3, 4, 60);
         gedung.addEdge(4, 5, 80);
+        
         gedung.degree(0);
         gedung.printGraph();
+        
         gedung.removeEdge(1, 3);
         gedung.printGraph();
+
+        System.out.println("Masukkan gedung asal : ");
+        int asal = sc.nextInt();
+        System.out.println("Masukkan gedung tujuan : ");
+        int tujuan = sc.nextInt();
+        
+        gedung.printHasil(asal, tujuan);
+        
+        sc.close();
     }
 }
