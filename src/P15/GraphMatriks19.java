@@ -28,4 +28,22 @@ public class GraphMatriks19 {
             System.out.println();
         }
     }
+
+    public void degree(int asal) throws Exception{
+        int k, totalIn = 0, totalOut = 0;
+
+        for (int j = 0; j < vertex; j++) {
+            if (matriks[j][asal] != 0) {
+                ++totalIn;
+            }
+        }
+        for (k = 0; k < vertex; k++) {
+            if (matriks[asal][k] != 0) {
+                ++totalOut;
+            }
+        }
+        System.out.println("InDegree dari Gedung " +  (char) ('A' + asal)+ ": " + totalIn);
+        System.out.println("OutDegree dari Gedung " + (char) ('A' + asal)+ ": " + totalOut);
+        System.out.println("Degree dari Gedung " + (char) ('A' + asal) + ": " + (totalIn + totalOut));
+    }
 }
