@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GraphMain19",
+            "request": "launch",
+            "mainClass": "P15.GraphMain19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreeArrayMain19",
+            "request": "launch",
+            "mainClass": "P14.Praktikum2.BinaryTreeArrayMain19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
             "name": "BinaryTreeMain19",
             "request": "launch",
             "mainClass": "P14.BinaryTreeMain19",

@@ -1,7 +1,5 @@
 package P14;
 
-import java.util.Scanner;
-
 public class BinaryTree19 {
     Node19 root;
 
