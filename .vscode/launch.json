@@ -1,0 +1,217 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "GraphMain19",
+            "request": "launch",
+            "mainClass": "P15.GraphMain19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreeArrayMain19",
+            "request": "launch",
+            "mainClass": "P14.Praktikum2.BinaryTreeArrayMain19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreeMain19",
+            "request": "launch",
+            "mainClass": "P14.BinaryTreeMain19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "Main_19",
+            "request": "launch",
+            "mainClass": "P13_UAS.Main_19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "DoubleLinkedListsMain",
+            "request": "launch",
+            "mainClass": "P12_Doublelinkedlists.DoubleLinkedListsMain",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "SLLMain",
+            "request": "launch",
+            "mainClass": "P11_Minggu11_LinkedList.SLLMain",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "QueueMain",
+            "request": "launch",
+            "mainClass": "P10_Praktikkum2.QueueMain",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "QueueMain",
+            "request": "launch",
+            "mainClass": "P10_Praktikum1.QueueMain",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "PostfixMain19",
+            "request": "launch",
+            "mainClass": "P9_Stack.PostfixMain19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "Main19",
+            "request": "launch",
+            "mainClass": "P9_Stack.Main19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "ProgramSiswaFirman",
+            "request": "launch",
+            "mainClass": "P8.ProgramSiswaFirman",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "MainObat19",
+            "request": "launch",
+            "mainClass": "Kuis1_Firmandika.MainObat19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "Array19",
+            "request": "launch",
+            "mainClass": "P1.Array19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "Fungsi19",
+            "request": "launch",
+            "mainClass": "P1.Fungsi19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "LatihanFirman19",
+            "request": "launch",
+            "mainClass": "P1.LatihanFirman19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "Pemilihan19",
+            "request": "launch",
+            "mainClass": "P1.Pemilihan19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "Perulangan19",
+            "request": "launch",
+            "mainClass": "P1.Perulangan19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "BukuMain19",
+            "request": "launch",
+            "mainClass": "P2.BukuMain19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "ArrayObjects",
+            "request": "launch",
+            "mainClass": "P3.ArrayObjects",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "ArrayBalok",
+            "request": "launch",
+            "mainClass": "P3_ArrayBalok.ArrayBalok",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "Segitiga2",
+            "request": "launch",
+            "mainClass": "P3_ArrayBalok.Segitiga2",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "BangunRuang",
+            "request": "launch",
+            "mainClass": "P3_Tugas.BangunRuang",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "ProgramMahasiswa",
+            "request": "launch",
+            "mainClass": "P3_Tugas2.ProgramMahasiswa",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "MainFaktorial",
+            "request": "launch",
+            "mainClass": "P5_BruteForceDivideConquer.MainFaktorial",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "MainPangkat",
+            "request": "launch",
+            "mainClass": "P5_BruteForceDivideConquer.MainPangkat",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "MainSum",
+            "request": "launch",
+            "mainClass": "P5_BruteForceDivideConquer.MainSum",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "MainHotel",
+            "request": "launch",
+            "mainClass": "P6_bubble_selection_insertion.LatihanPraktikum.MainHotel",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "P6_bubble_selection_insertion.Percobaan.Main",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        },
+        {
+            "type": "java",
+            "name": "BukuMain19(1)",
+            "request": "launch",
+            "mainClass": "P7_TestSearching.BukuMain19",
+            "projectName": "PrakASD_1G_19_3f0ec27f"
+        }
+    ]
+}
